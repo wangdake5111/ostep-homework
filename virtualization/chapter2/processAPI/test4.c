@@ -14,7 +14,7 @@ int main(){
         // int r = execv(myargs[0], myargs);
         myargs[0] = strdup("ls");
         myargs[1] = NULL;
-        int r = execvp(myargs[0], myargs);
+        execvp(myargs[0], myargs);
     }else{
         printf("parent\n");
 
